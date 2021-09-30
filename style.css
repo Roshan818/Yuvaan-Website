@@ -288,7 +288,7 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(assets/bg2.jpg);
+  background-image: url(assets/bg1.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -434,7 +434,7 @@ p {
 }
 #services .service-top {
   width: 500px;
-  max-margin: 0 auto;
+  margin: 0 auto;
 }
 .section-title {
   font-size: 4rem;
