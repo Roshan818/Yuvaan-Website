@@ -1,0 +1,83 @@
+/* Team Section */
+#team .team {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#team .team-top {
+  width: 500px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.section-title span {
+  color: green;
+}
+#team .team-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+#team .team-item {
+  flex-basis: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+
+  background-image: url("assets/vivek.jpeg");
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: -1;
+  align-content: center;
+  justify-content: center;
+}
+#team .team-item:hover {
+  box-shadow: 0 0 10px 0 black;
+  filter: grayscale(0);
+  transition: 0.3s ease box-shadow;
+}
+#team .team-bottom .team-item .dp {
+  height: 220px;
+  width: 200px;
+  display: cover;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+#team.team-bottom .team-item .dp:hover {
+  opacity: 0.5;
+}
+#team .team-item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+#team h2 {
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: white;
+}
+/* End of Team Section */
