@@ -30,7 +30,19 @@ p {
 
   font-size: 1.4rem;
 }
-
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.section-title span {
+  color: crimson;
+}
 /* Header Section */
 /* #header {
   position: fixed;
@@ -416,11 +428,34 @@ p {
   border: 7px solid crimson;
   z-index: -1;
 }
+#about .col-right h2 {
+  margin-top: 20px;
+}
+#about .col-right .about-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 10px solid white;
+}
+#about .col-right .about-img::after {
+  content: "";
+  position: absolute;
+  right: -33px;
+  bottom: 19px;
+  height: 98%;
+  width: 98%;
+  border: 7px solid crimson;
+  z-index: -1;
+}
 #about .col-right .cta {
-  color: black;
+  color: crimson;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
+  border-radius: 35px;
+}
+#about .col-right .cta:hover {
+  color: white;
 }
 /* End of About Section */
 
@@ -436,19 +471,7 @@ p {
   width: 500px;
   margin: 0 auto;
 }
-.section-title {
-  font-size: 4rem;
-  font-weight: 300;
-  color: black;
-  margin-bottom: 10px;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.section-title span {
-  color: crimson;
-}
+
 #services .service-top {
   font-size: 1.4rem;
   margin-top: 5px;
@@ -558,10 +581,14 @@ p {
   font-size: 1.5rem;
 }
 #contact .cta {
-  color: black;
+  color: crimson;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
+  border-radius: 35px;
+}
+#contact .cta:hover {
+  color: white;
 }
 /* End of Contact Section */
 
