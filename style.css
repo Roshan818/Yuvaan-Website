@@ -30,19 +30,7 @@ p {
 
   font-size: 1.4rem;
 }
-.section-title {
-  font-size: 4rem;
-  font-weight: 300;
-  color: black;
-  margin-bottom: 10px;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.section-title span {
-  color: crimson;
-}
+
 /* Header Section */
 /* #header {
   position: fixed;
@@ -300,7 +288,7 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(assets/bg1.jpg);
+  background-image: url(assets/bg2.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -428,34 +416,11 @@ p {
   border: 7px solid crimson;
   z-index: -1;
 }
-#about .col-right h2 {
-  margin-top: 20px;
-}
-#about .col-right .about-img {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border: 10px solid white;
-}
-#about .col-right .about-img::after {
-  content: "";
-  position: absolute;
-  right: -33px;
-  bottom: 19px;
-  height: 98%;
-  width: 98%;
-  border: 7px solid crimson;
-  z-index: -1;
-}
 #about .col-right .cta {
-  color: crimson;
+  color: black;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
-  border-radius: 35px;
-}
-#about .col-right .cta:hover {
-  color: white;
 }
 /* End of About Section */
 
@@ -469,9 +434,21 @@ p {
 }
 #services .service-top {
   width: 500px;
-  margin: 0 auto;
+  max-margin: 0 auto;
 }
-
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.section-title span {
+  color: crimson;
+}
 #services .service-top {
   font-size: 1.4rem;
   margin-top: 5px;
@@ -581,14 +558,10 @@ p {
   font-size: 1.5rem;
 }
 #contact .cta {
-  color: crimson;
+  color: black;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
-  border-radius: 35px;
-}
-#contact .cta:hover {
-  color: white;
 }
 /* End of Contact Section */
 
@@ -738,6 +711,213 @@ p {
   /* End Overview */
 }
 /* End of Media query for tablet */
+
+
+
+/* For images */
+
+.headImage_container{
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.moduleHead_container{
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.image_container {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+  margin: auto;
+}
+
+.column img {
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.modColumn {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+  margin: auto;
+}
+
+.modColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.imgcontainer {
+position: relative;
+width: 100%;
+padding-top: 8px;
+overflow: hidden;
+
+}
+/* Make the image to responsive */
+.image {
+display: block;
+width: 100%;
+height: auto;
+z-index: 2;
+/*border: 10px solid #EEE5E5*/
+/*opacity: 0.5;*/
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  height: 250px;
+  
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: 600px;
+  
+  }
+
+.image3 {
+    display: block;
+    width: 100%;
+    height: 500px;
+    
+    }
+
+.image4 {
+      display: block;
+      width: 100%;
+      height: 400px;
+      
+      }
+
+.image5 {
+        display: block;
+        width: 100%;
+        height: 450px;
+        
+        }
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+position: absolute;
+bottom: 0;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.5); /* Black see-through */
+color: #f1f1f1;
+width: 100%;
+transition: .5s ease;
+opacity:0;
+color: white;
+font-size: 20px;
+padding: 20px;
+text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.imgcontainer:hover .overlay {
+opacity: 4;
+}
+
+
+
+/* Translucent rest */
+.image_container:hover img {
+  opacity: 0.7;
+  transform: ransformY(1px);
+}
+
+
+.image_container:hover img:hover {
+  opacity: 1;
+  transform: ransformY(1px);
+}
+/*End of Translucent */
+
+/*zoom effect*/
+.imgcontainer:hover img {
+  transition: .75s ease;
+  /*transform: scale(1.02,1.02);*/
+  transform: scale(1.08) rotate(0deg);
+  filter: greyscale(1);
+  
+  
+  overflow: hidden;
+  margin-top: 16px;
+  /*border: 10px solid #000000;*/
+  
+}
+
+
+/* Blur Effect
+
+ .image_container:hover img
+   {
+    transition: .75s ease;
+   -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px); 
+
+}
+
+.image_container:hover img:hover
+{
+  transition: .25s ease;
+-webkit-filter: blur(0px);
+-moz-filter: blur(0px);
+-o-filter: blur(0px);
+-ms-filter: blur(0px);
+filter: blur(0px); 
+
+}
+
+Blur effect end */ 
+
+
+
+
 /* Media Query for desktop */
 @media only screen and (min-width: 1200px) {
   #services .service-bottom .service-item {
@@ -745,3 +925,4 @@ p {
     margin: 1.5%;
   }
 }
+/* End of image section*/
