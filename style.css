@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-background: assets/mars-surface-3d-model-max_label2.jpg;
 }
 html {
   font-size: 10px;
@@ -375,6 +374,9 @@ p {
   color: white;
   background-color: crimson;
 }
+#hero .particles-js {
+  height: 100%;
+}
 /* End Hero Section */
 
 /* About Section */
@@ -435,7 +437,7 @@ p {
 }
 #services .service-top {
   width: 500px;
-  max-margin: 0 auto;
+  max-margin: 1200 auto;
 }
 .section-title {
   font-size: 4rem;
@@ -713,17 +715,15 @@ p {
 }
 /* End of Media query for tablet */
 
-
-
 /* For images */
-
-.headImage_container{
+/* 
+.headImage_container {
   width: 90%;
   height: auto;
   margin: auto;
 }
 
-.moduleHead_container{
+.moduleHead_container {
   width: 60%;
   height: auto;
   margin: auto;
@@ -740,8 +740,9 @@ p {
   flex-wrap: wrap;
   padding: 0 8px;
 }
-
+*/
 /* Create four equal columns that sits next to each other */
+/*
 .column {
   flex: 25%;
   max-width: 25%;
@@ -768,7 +769,7 @@ p {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -776,7 +777,7 @@ p {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
@@ -784,112 +785,99 @@ p {
   }
 }
 
-* {box-sizing: border-box}
-
-/* Container needed to position the overlay. Adjust the width as needed */
-.imgcontainer {
-position: relative;
-width: 100%;
-padding-top: 8px;
-overflow: hidden;
-
+* {
+  box-sizing: border-box;
 }
-/* Make the image to responsive */
+
+
+.imgcontainer {
+  position: relative;
+  width: 100%;
+  padding-top: 8px;
+  overflow: hidden;
+}
+
 .image {
-display: block;
-width: 100%;
-height: auto;
-z-index: 2;
-/*border: 10px solid #EEE5E5*/
-/*opacity: 0.5;*/
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  
 }
 
 .image1 {
   display: block;
   width: 100%;
   height: 250px;
-  
 }
 
 .image2 {
   display: block;
   width: 100%;
   height: 600px;
-  
-  }
+}
 
 .image3 {
-    display: block;
-    width: 100%;
-    height: 500px;
-    
-    }
+  display: block;
+  width: 100%;
+  height: 500px;
+}
 
 .image4 {
-      display: block;
-      width: 100%;
-      height: 400px;
-      
-      }
+  display: block;
+  width: 100%;
+  height: 400px;
+}
 
 .image5 {
-        display: block;
-        width: 100%;
-        height: 450px;
-        
-        }
+  display: block;
+  width: 100%;
+  height: 450px;
+}
 
-/* The overlay effect - lays on top of the container and over the image */
+
 .overlay {
-position: absolute;
-bottom: 0;
-background: rgb(0, 0, 0);
-background: rgba(0, 0, 0, 0.5); /* Black see-through */
-color: #f1f1f1;
-width: 100%;
-transition: .5s ease;
-opacity:0;
-color: white;
-font-size: 20px;
-padding: 20px;
-text-align: center;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .imgcontainer:hover .overlay {
-opacity: 4;
+  opacity: 4;
 }
 
 
-
-/* Translucent rest */
 .image_container:hover img {
   opacity: 0.7;
   transform: ransformY(1px);
 }
 
-
 .image_container:hover img:hover {
   opacity: 1;
   transform: ransformY(1px);
 }
-/*End of Translucent */
 
-/*zoom effect*/
+
 .imgcontainer:hover img {
-  transition: .75s ease;
-  /*transform: scale(1.02,1.02);*/
+  transition: 0.75s ease;
+  
   transform: scale(1.08) rotate(0deg);
   filter: greyscale(1);
-  
-  
+
   overflow: hidden;
   margin-top: 16px;
-  /*border: 10px solid #000000;*/
   
 }
-
-
+*/
 /* Blur Effect
 
  .image_container:hover img
@@ -914,10 +902,7 @@ filter: blur(0px);
 
 }
 
-Blur effect end */ 
-
-
-
+Blur effect end */
 
 /* Media Query for desktop */
 @media only screen and (min-width: 1200px) {
