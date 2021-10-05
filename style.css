@@ -182,6 +182,11 @@ p {
   max-width: 1300px;
   padding: 0 10px;
 }
+#header .nav-bar img {
+  height: 60px;
+  margin-top: 2px;
+  margin-bottom: auto;
+}
 #header .nav-list ul {
   list-style: none;
   position: absolute;
@@ -376,6 +381,7 @@ p {
 }
 #hero .particles-js {
   height: 100%;
+  z-index: 1090;
 }
 /* End Hero Section */
 
@@ -425,6 +431,28 @@ p {
   padding: 10px 20px;
   font-size: 2rem;
 }
+#about .col-left h1 {
+  font-size: 5rem;
+}
+#about .cta {
+  display: inline-block;
+  padding: 10px 30px;
+
+  background-color: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease background-color;
+  transition-property: background-color, color;
+  border-radius: 35px;
+}
+#about .cta:hover {
+  color: white;
+  background-color: crimson;
+}
 /* End of About Section */
 
 /* Overview Section */
@@ -436,9 +464,14 @@ p {
   padding: 100px 0;
 }
 #services .service-top {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
   width: 500px;
-  max-margin: 1200 auto;
 }
+
 .section-title {
   font-size: 4rem;
   font-weight: 300;
@@ -479,6 +512,7 @@ p {
   margin: 10px 5%;
   position: relative;
   z-index: 1;
+  min-width: 400px;
 }
 #services .service-item::after {
   content: "";
@@ -501,12 +535,21 @@ p {
 #services .service-item h2 {
   font-size: 2rem;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 #services .service-item p {
   color: white;
   text-align: left;
+}
+#services .service-item ul li {
+  color: white;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
 }
 /* End Overview Section */
 
@@ -542,9 +585,14 @@ p {
   margin-bottom: 10px;
 }
 #contact .contact-info h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 3.4rem;
+  font-weight: 300;
   margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 250;
 }
 #contact .contact-heading h2 {
   font-size: 3.4rem;
@@ -566,6 +614,31 @@ p {
   padding: 10px 20px;
   font-size: 2rem;
 }
+#contact .contact-info a {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 250;
+}
+#contact .cta {
+  display: inline-block;
+  padding: 10px 30px;
+
+  background-color: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease background-color;
+  transition-property: background-color, color;
+  border-radius: 35px;
+}
+#contact .cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
 /* End of Contact Section */
 
 /* Footer Section */
@@ -578,7 +651,7 @@ p {
   padding-top: 50px;
   padding-bottom: 10px;
 }
-.brand h1 {
+/*.brand h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -586,6 +659,10 @@ p {
 }
 .brand h1 span {
   color: crimson;
+}*/
+.brand img {
+  margin-bottom: 20px;
+  height: 100px;
 }
 #footer .social-icon {
   display: flex;
@@ -663,12 +740,20 @@ p {
     width: 98%;
     border: 10px solid crimson;
   }
+  #about .about .col-left .about-img::after {
+    right: -45px;
+    bottom: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson;
+  }
   #about .col-right {
     text-align: left;
     padding: 30px;
   }
   #about .col-right h1 {
     text-align: left;
+    font-size: 4.5rem;
   }
   /* End About */
   /* Contact */
