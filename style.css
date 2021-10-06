@@ -381,7 +381,7 @@ p {
 }
 #hero .particles-js {
   height: 100%;
-  z-index: 1090;
+  z-index: 10000;
 }
 /* End Hero Section */
 
